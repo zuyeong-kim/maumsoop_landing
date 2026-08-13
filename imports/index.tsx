@@ -1673,7 +1673,7 @@ function Frame79() {
       <p className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Medium',sans-serif] font-medium leading-[1.4] left-1/2 text-[128px] text-center text-white top-[374px] tracking-[-2.56px] whitespace-nowrap">
         마음에도
         <br aria-hidden />
-        머물 곳이 필요하니까.!!!!
+        머물 곳이 필요하니까.
       </p>
       <Component className="-translate-x-1/2 absolute bg-[#0c2d13] h-[64px] left-[calc(50%+0.5px)] overflow-clip rounded-[100px] top-[841px] w-[257px]" />
       <Frame />

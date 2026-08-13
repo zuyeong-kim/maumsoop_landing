@@ -1,5 +1,5 @@
 // @ts-ignore — Vite resolves mp4 as a URL asset
-import heroVideoUrl from "@/imports/Firefly_______________________________._____________--_____________________--_________________________1_.mp4?url";
+import heroVideoUrl from "../../imports/hero.mp4";
 import heroPoster from "@/imports/Frame7/e3fb5059af4c0bd3aa7a3bb0f0691b82a82cc91e.png";
 
 export default function HeroVideoBackground() {

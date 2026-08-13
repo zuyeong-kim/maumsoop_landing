@@ -333,9 +333,10 @@ export default function TherapistSlider() {
         top: "4470px",
         left: 0,
         width: `${SLIDE_W}px`,
-        height: "625px",
+        height: "700px",
         background: "linear-gradient(to bottom, #ffffff 0%, #f5faf6 100%)",
         zIndex: 10,
+        borderRadius: "0px 0px 200px 200px",
       }}
     >
       {/* Section heading – static */}
