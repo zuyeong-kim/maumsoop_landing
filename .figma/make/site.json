@@ -1,0 +1,11 @@
+{
+  "title": "마음숲 랜딩페이지",
+  "description": "Transform selected Figma designs into fully functional web pages, preserving layout, images, typography, and colors for accurate representation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

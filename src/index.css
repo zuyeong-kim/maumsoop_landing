@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+
+/* Noto Serif KR – Figma-resolved variable font */
+@font-face {
+  font-family: "Noto Serif KR:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/NotoSerifKR-VF_3") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif KR:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.figma.com/font/NotoSerifKR-VF_3") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif KR:SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://static.figma.com/font/NotoSerifKR-VF_3") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif KR:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/NotoSerifKR-VF_3") format("woff2");
+}
+/* ExtraBold: same variable font source, weight 800 */
+@font-face {
+  font-family: "Noto Serif KR:ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://static.figma.com/font/NotoSerifKR-VF_3") format("woff2");
+}
+/* Quoted-family variant used in one Figma node */
+@font-face {
+  font-family: "'Noto Serif KR':ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://static.figma.com/font/NotoSerifKR-VF_3") format("woff2");
+}
+
+/* Pretendard – via jsDelivr variable font */
+@font-face {
+  font-family: "Pretendard:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard:SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.woff2") format("woff2");
+}
+
+/* ── Item 1: 요즘 섹션 타이틀 — fix font (Figma exported invalid quoted variant) ── */
+.left-\[320px\].top-\[1377px\] {
+  font-family: "Noto Serif KR:ExtraBold", sans-serif !important;
+}
+
+/* ── Item 4: Hero video — hide original image + dark overlay inside hero container ── */
+[data-name="dda87e2a-94a1-4339-bf8c-3228616b0be7 1"] > div {
+  display: none;
+}
+
+/* ── Item 4: Remove Frame1's white background so pre-rendered overlays show through ── */
+body {
+  background: white;
+}
+.bg-white.relative.size-full {
+  background-color: transparent !important;
+}
+
+/* ── Item 5: Program card subtitle — widen container so text wraps naturally ── */
+.left-\[36px\].top-\[268px\].w-\[248px\] {
+  width: 380px;
+}
+
+/* ── Item 1: 요즘 섹션 — oval image frame hover (scale img inside) ── */
+
+/* Frame3/Frame6 have pointer-events-none on their outer div; re-enable so hover works */
+.h-\[403px\].w-\[280px\].rounded-\[202px\].pointer-events-none {
+  pointer-events: auto !important;
+}
+
+/* Smooth img scale transition for all four oval frames */
+.h-\[403px\].w-\[280px\].rounded-\[202px\] img {
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+
+/* Scale up on hover — outer div triggers; img is clipped by inner overflow-hidden wrapper */
+.h-\[403px\].w-\[280px\].rounded-\[202px\]:hover img {
+  transform: scale(1.05);
+}
+
+/* ── Item 5a: Hide "자세히 보기" text inside program cards ── */
+.text-\[\#26422c\] {
+  display: none;
+}
+
+/* ── Item 5b: Program card hover — slightly darker border ── */
+.h-\[401px\].w-\[487px\].overflow-clip.rounded-\[15px\] {
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+.h-\[401px\].w-\[487px\].overflow-clip.rounded-\[15px\]:hover {
+  border-color: #8fa896;
+}
+
+/* ── 상담예약 섹션 위치 조정 — gradient div 하단(5170px) 직후 시작하도록 120px 위로 ── */
+/* Frame54: 상담예약 타이틀+설명 (Frame75-relative: 2394→2274) */
+.left-\[420px\].top-\[2394px\] {
+  top: 2274px !important;
+}
+/* Frame48: 예약폼 디자인 플레이스홀더 (Frame75-relative: 2394→2274) */
+.left-\[934px\].top-\[2394px\] {
+  top: 2274px !important;
+}
+/* Frame73: 예약 안내 단계 (Frame75-relative: 2596→2476) */
+.left-\[420px\].top-\[2596px\] {
+  top: 2476px !important;
+}
