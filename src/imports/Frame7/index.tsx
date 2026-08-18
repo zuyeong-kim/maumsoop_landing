@@ -983,8 +983,7 @@ function Frame75() {
 
 function Frame3() {
   return (
-    <FadeUp delay={0}>
-    <div className="absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
+    <FadeUp delay={0} className="absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
         <div className="absolute inset-0 overflow-hidden rounded-[202px]">
@@ -992,34 +991,33 @@ function Frame3() {
         </div>
       </div>
       <div aria-hidden className="absolute border border-[#f6f5f5] border-solid inset-0 rounded-[202px]" />
-    </div>
     </FadeUp>
   );
 }
 
 function Frame4() {
   return (
-    <div className="absolute bg-white border border-[#f6f5f5] border-solid h-[403px] left-[653.33px] overflow-clip rounded-[202px] top-[1607px] w-[280px]">
+    <FadeUp delay={300} className="absolute bg-white border border-[#f6f5f5] border-solid h-[403px] left-[653.33px] overflow-clip rounded-[202px] top-[1607px] w-[280px]">
       <div className="absolute h-[403px] left-[-163.33px] top-[-1px] w-[605px]" data-name="d0195a74-21ab-4e0a-8b1c-d92b7f8c857e 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgD0195A7421Ab4E0A8B1CD92B7F8C857E1} />
       </div>
-    </div>
+    </FadeUp>
   );
 }
 
 function Frame5() {
   return (
-    <div className="absolute bg-white border border-[#f6f5f5] border-solid h-[403px] left-[986.67px] overflow-clip rounded-[202px] top-[1560px] w-[280px]">
+    <FadeUp delay={700} className="absolute bg-white border border-[#f6f5f5] border-solid h-[403px] left-[986.67px] overflow-clip rounded-[202px] top-[1560px] w-[280px]">
       <div className="absolute h-[403px] left-[-163.67px] top-[-1px] w-[605px]" data-name="52e54cbf-3ca3-4936-91d4-f48eecb9daf3 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img52E54Cbf3Ca3493691D4F48Eecb9Daf31} />
       </div>
-    </div>
+    </FadeUp>
   );
 }
 
 function Frame6() {
   return (
-    <div className="absolute h-[403px] left-[1320px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
+    <FadeUp delay={1000} className="absolute h-[403px] left-[1320px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
         <div className="absolute inset-0 overflow-hidden rounded-[202px]">
@@ -1027,7 +1025,7 @@ function Frame6() {
         </div>
       </div>
       <div aria-hidden className="absolute border border-[#f6f5f5] border-solid inset-0 rounded-[202px]" />
-    </div>
+    </FadeUp>
   );
 }
 

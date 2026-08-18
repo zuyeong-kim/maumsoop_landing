@@ -1325,7 +1325,7 @@ function Frame75() {
   )
 }
 
-function Frame3() {
+function yozm1() {
   return (
     <div className="absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
@@ -1640,7 +1640,7 @@ function Frame79() {
         <br aria-hidden />
         하루를 보내고 있나요?
       </p>
-      <Frame3 />
+      <yozm1 />
       <Frame4 />
       <Frame5 />
       <Frame6 />

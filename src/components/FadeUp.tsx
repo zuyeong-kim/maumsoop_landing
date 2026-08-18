@@ -3,9 +3,11 @@ import { useEffect, useRef, useState } from "react";
 export default function FadeUp({
   children,
   delay = 0,
+  className = "",
 }: {
   children: React.ReactNode;
   delay?: number;
+  className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -13,15 +15,16 @@ export default function FadeUp({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
+        setVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      {
+        threshold: 0.1,
+      }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
     return () => observer.disconnect();
   }, []);
@@ -30,10 +33,11 @@ export default function FadeUp({
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`
-        transition-all duration-700 ease-out
-        ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
-      `}
+      className={`${className} transition-all duration-1000 ease-out ${
+        visible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-24"
+      }`}
     >
       {children}
     </div>
