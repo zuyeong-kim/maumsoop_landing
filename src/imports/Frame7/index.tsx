@@ -493,9 +493,14 @@ function Frame37() {
 
 function Frame36() {
   return (
-    <div className="bg-[rgba(255,255,255,0.05)] border border-[#e3e3e3] border-solid h-[54px] relative rounded-[100px] shrink-0 w-[170px]">
+    <a
+      href="https://map.naver.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[rgba(255,255,255,0.05)] border border-[#e3e3e3] border-solid h-[54px] relative rounded-[100px] shrink-0 w-[170px] cursor-pointer"
+    >
       <Frame37 />
-    </div>
+    </a>
   );
 }
 
@@ -536,9 +541,14 @@ function Frame39() {
 
 function Frame38() {
   return (
-    <div className="bg-[rgba(255,255,255,0.05)] border border-[#e3e3e3] border-solid h-[54px] relative rounded-[100px] shrink-0 w-[170px]">
+    <a
+      href="https://map.kakao.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[rgba(255,255,255,0.05)] border border-[#e3e3e3] border-solid h-[54px] relative rounded-[100px] shrink-0 w-[170px] cursor-pointer"
+    >
       <Frame39 />
-    </div>
+    </a>
   );
 }
 
