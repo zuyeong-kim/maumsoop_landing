@@ -1,6 +1,6 @@
 import { useState } from "react";
 import svgPaths from "@/imports/Frame7/svg-wn9bhywp20";
-import logo from "../../../imports/maum_logo.svg"
+import logo from "@/imports/maum_logo.svg"
 
 /* ── Scroll helper ── */
 const HEADER_H = 64;
