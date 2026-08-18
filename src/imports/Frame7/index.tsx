@@ -12,6 +12,9 @@ import imgD0195A7421Ab4E0A8B1CD92B7F8C857E1 from "./43b4b628e0414b8023fa2ae11c5c
 import img52E54Cbf3Ca3493691D4F48Eecb9Daf31 from "./31d7b7de2f643ca47b0ede8123656df2110376a6.png";
 import imgFrame16 from "./8a614344d05b7c4cc6333735ef1c6db30993c7f4.png";
 import { imgVector } from "./svg-qo56h";
+
+
+
 type Component1Props = {
   className?: string;
   property1?: "Frame 50" | "Frame 51";

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import svgPaths from "@/imports/Frame7/svg-wn9bhywp20";
+import logo from "../../../imports/maum_logo.svg"
 
 /* ── Scroll helper ── */
 const HEADER_H = 64;
@@ -22,17 +23,11 @@ const SECTIONS = {
 /* ── Logo SVG (Asset 7) – same paths used in the import ── */
 function LogoMark() {
   return (
-    <div style={{ width: "75px", height: "30px", position: "relative", overflow: "hidden", flexShrink: 0 }}>
-      <svg
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-        fill="none"
-        viewBox="0 0 75 29.9937"
-        preserveAspectRatio="none"
-      >
-        <path d={svgPaths.p230e5280} fill="#022409" />
-        <path d={svgPaths.p39f01000} fill="#022409" />
-      </svg>
-    </div>
+    <img
+      src={logo}
+      alt="마음숲"
+      className="w-[75px] h-auto shrink-0"
+    />
   );
 }
 
