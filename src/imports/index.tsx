@@ -1,4 +1,4 @@
-import svgPaths from "./svg-wn9bhywp20"
+import svgPaths from "../../imports/svg-wn9bhywp20.ts"
 import img2Be3Fc5F381149CfAc21Adea4Dcec0991 from "./44cb885a2815ae8ae61346c39331bb810b225f7a.png"
 import imgFrame19 from "./0c04f9bb79a8d6539de506494f5ba35c78fb5fbf.png"
 import imgFrame20 from "./9fa0b79241e8e9f2492ea3d1636257ecdfd40bf4.png"
@@ -11,7 +11,7 @@ import imgFrame13 from "./9ee5b759dc1318ee112c52c7c09adcffd1983f6e.png"
 import imgD0195A7421Ab4E0A8B1CD92B7F8C857E1 from "./43b4b628e0414b8023fa2ae11c5cb5ac6bc4b601.png"
 import img52E54Cbf3Ca3493691D4F48Eecb9Daf31 from "./31d7b7de2f643ca47b0ede8123656df2110376a6.png"
 import imgFrame16 from "./8a614344d05b7c4cc6333735ef1c6db30993c7f4.png"
-import { imgVector } from "./svg-qo56h"
+import { imgVector } from "../../imports/svg-qo56h.tsx"
 
 import FadeUp from "../FadeUp.tsx";
 
@@ -1675,11 +1675,7 @@ function Frame79() {
           나에게 맞는 속도로, 나에게 맞는 방법을 함께 찾아갑니다.
         </p>
       </div>
-      <p className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Medium',sans-serif] font-medium leading-[1.4] left-1/2 text-[128px] text-center text-white top-[374px] tracking-[-2.56px] whitespace-nowrap">
-        마음에도
-        <br aria-hidden />
-        머물 곳이 필요하니까.
-      </p>
+<HeroLogo />
       <Component className="-translate-x-1/2 absolute bg-[#0c2d13] h-[64px] left-[calc(50%+0.5px)] overflow-clip rounded-[100px] top-[841px] w-[257px]" />
       <Frame />
     </div>

@@ -13,7 +13,17 @@ import img52E54Cbf3Ca3493691D4F48Eecb9Daf31 from "./31d7b7de2f643ca47b0ede812365
 import imgFrame16 from "./8a614344d05b7c4cc6333735ef1c6db30993c7f4.png";
 import { imgVector } from "./svg-qo56h";
 
-import FadeUp  from "@/components/FadeUp";
+import maumLogo from "@/imports/maum_logo.svg";
+import HeroLogo from "@/imports/HeroLogo";
+
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
+
+import TypingHero from "@/components/TypingHero";
 
 
 type Component1Props = {
@@ -309,7 +319,7 @@ function Frame19() {
       <Frame20 />
       <ul className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] block font-['Pretendard:Regular',sans-serif] leading-[0] list-disc min-w-full not-italic relative shrink-0 text-[#2b2b2b] text-[18px] tracking-[-0.36px] w-[min-content]">
         <li className="mb-0 ms-[27px]">
-          <span className="leading-[1.63]">허그맘허그인 심리상담센터 개인. 가족. EAP상담</span>
+          <span className="leading-[1.63] whitespace-nowrap">허그맘허그인 심리상담센터 개인. 가족. EAP상담</span>
         </li>
         <li className="mb-0 ms-[27px]">
           <span className="leading-[1.63]">정다운상담클리닉 개인. 부부상담</span>
@@ -596,9 +606,12 @@ function Asset() {
 
 function Frame42() {
   return (
-    <div className="content-stretch flex gap-[14px] h-[30px] items-center justify-center relative shrink-0 w-[147px]">
-      <Asset />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Noto_Serif_KR:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#0c2d13] text-[20px] whitespace-nowrap">마음숲</p>
+    <div className="relative shrink-0">
+      <img
+        src={maumLogo}
+        alt="마음숲"
+        className="w-[147px] h-auto"
+      />
     </div>
   );
 }
@@ -957,8 +970,8 @@ function Frame75() {
         </div>
       </div>
       <div className="-translate-x-1/2 absolute bg-gradient-to-b from-[66.084%] from-white h-[2204px] left-1/2 rounded-bl-[200px] rounded-br-[200px] to-[#f5faf6] top-0 w-[1920px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+1.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[144px] whitespace-nowrap">당신의 마음에 맞는 상담을 만나보세요</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[1524px] whitespace-nowrap">당신의 이야기를 듣는 사람들</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+1.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[144px] whitespace-nowrap tracking-[0.02em]">당신의 마음에 맞는 상담을 만나보세요</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[1524px] whitespace-nowrap tracking-[0.02em]">당신의 이야기를 듣는 사람들</p>
       <Frame54 />
       <Frame7 />
       <Frame11 />
@@ -983,49 +996,47 @@ function Frame75() {
 
 function Frame3() {
   return (
-    <FadeUp delay={0} className="absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
+    <div className="symptom-image absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
         <div className="absolute inset-0 overflow-hidden rounded-[202px]">
           <img alt="" className="absolute h-full left-[-57.83%] max-w-none top-0 w-[215.89%]" src={imgFrame13} />
         </div>
       </div>
-      <div aria-hidden className="absolute border border-[#f6f5f5] border-solid inset-0 rounded-[202px]" />
-    </FadeUp>
+    </div>
   );
 }
 
 function Frame4() {
   return (
-    <FadeUp delay={300} className="absolute bg-white border border-[#f6f5f5] border-solid h-[403px] left-[653.33px] overflow-clip rounded-[202px] top-[1607px] w-[280px]">
+    <div className="symptom-image absolute bg-white h-[403px] left-[653.33px] overflow-clip rounded-[202px] top-[1607px] w-[280px]">
       <div className="absolute h-[403px] left-[-163.33px] top-[-1px] w-[605px]" data-name="d0195a74-21ab-4e0a-8b1c-d92b7f8c857e 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgD0195A7421Ab4E0A8B1CD92B7F8C857E1} />
       </div>
-    </FadeUp>
+    </div>
   );
 }
 
 function Frame5() {
   return (
-    <FadeUp delay={700} className="absolute bg-white border border-[#f6f5f5] border-solid h-[403px] left-[986.67px] overflow-clip rounded-[202px] top-[1560px] w-[280px]">
+    <div className="symptom-image absolute bg-white h-[403px] left-[986.67px] overflow-clip rounded-[202px] top-[1560px] w-[280px]">
       <div className="absolute h-[403px] left-[-163.67px] top-[-1px] w-[605px]" data-name="52e54cbf-3ca3-4936-91d4-f48eecb9daf3 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img52E54Cbf3Ca3493691D4F48Eecb9Daf31} />
       </div>
-    </FadeUp>
+    </div>
   );
 }
 
 function Frame6() {
   return (
-    <FadeUp delay={1000} className="absolute h-[403px] left-[1320px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
+    <div className="symptom-image absolute h-[403px] left-[1320px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
         <div className="absolute inset-0 overflow-hidden rounded-[202px]">
           <img alt="" className="absolute h-full left-[-57.92%] max-w-none top-[-0.08%] w-[215.89%]" src={imgFrame16} />
         </div>
       </div>
-      <div aria-hidden className="absolute border border-[#f6f5f5] border-solid inset-0 rounded-[202px]" />
-    </FadeUp>
+    </div>
   );
 }
 
@@ -1182,8 +1193,67 @@ function Frame() {
 }
 
 function Frame79() {
+  
+   const sectionRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+  () => {
+    const animateSymptoms = () => {
+      gsap.fromTo(
+        ".symptom-image",
+        {
+          y: 80,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: "power3.out",
+          overwrite: true,
+        }
+      );
+
+
+    };
+
+    ScrollTrigger.create({
+      trigger: ".symptom-trigger",
+      start: "top 70%",
+
+      onEnter: () => {
+        animateSymptoms();
+      },
+
+      onEnterBack: () => {
+        animateSymptoms();
+      },
+    });
+
+// 처음에는 완전히 숨기기
+gsap.set(".hero-title, .hero-sub, .hero-button", {
+  autoAlpha: 0,
+  y: 40,
+});
+
+// 로고가 사라진 뒤 등장
+gsap.to(".hero-title, .hero-sub", {
+  autoAlpha: 1,
+  y: 0,
+  duration: 1.2,
+  delay: 4.8,
+  stagger: 0.15,
+  ease: "power3.out",
+});
+  },
+  { scope: sectionRef }
+);
+
+  
   return (
-    <div className="absolute h-[2966px] left-0 top-0 w-[1920px]">
+    
+    <div ref={sectionRef} className="absolute h-[2966px] left-0 top-0 w-[1920px]">
       <div className="absolute bg-[#f5faf6] h-[686px] left-0 top-[2280px] w-[1920px]" />
       <div className="-translate-x-1/2 absolute h-[1081px] left-1/2 top-0 w-[1920px]" data-name="dda87e2a-94a1-4339-bf8c-3228616b0be7 1">
         <div aria-hidden className="absolute inset-0 pointer-events-none">
@@ -1191,21 +1261,22 @@ function Frame79() {
           <div className="absolute bg-[rgba(32,39,28,0.8)] inset-0" />
         </div>
       </div>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Regular','Batang',serif] font-normal leading-[normal] left-[calc(50%+0.5px)] text-[20px] text-center text-white top-[749px] whitespace-nowrap">당신의 이야기가 천천히 시작될 수 있는 공간</p>
+      <p className="hero-sub -translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Regular','Batang',serif] font-normal leading-[normal] left-[calc(50%+0.5px)] text-[20px] text-center text-white top-[749px] whitespace-nowrap">당신의 이야기가 천천히 시작될 수 있는 공간</p>
       <p className="[word-break:break-word] absolute font-[''Noto_Serif_KR':ExtraBold','Batang',serif] tracking-[-0.02em] leading-[normal] left-[320px] not-italic text-[#0c2d13] text-[36px] top-[1377px] whitespace-nowrap">
         요즘, 이런 마음으로
         <br aria-hidden />
         하루를 보내고 있나요?
       </p>
+      <div className="symptom-trigger absolute left-0 top-[1300px] h-[700px] w-full pointer-events-none" />
       <Frame3 />
       <Frame4 />
       <Frame5 />
       <Frame6 />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',serif] font-bold leading-[normal] left-[460px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap">무기력</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[800px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap">관계의 어려움</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1126.5px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap">불안</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1460px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap">번아웃</p>
-      <p className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+0.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[2499px] whitespace-nowrap">마음의 어려움에는 저마다 다른 이유가 있습니다.</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',serif] font-bold leading-[normal] left-[460px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap tracking-[-0.02em]">무기력</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[800px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap tracking-[-0.02em]">관계의 어려움</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1126.5px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap tracking-[-0.02em]">불안</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1460px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap tracking-[-0.02em]">번아웃</p>
+      <p className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+0.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[2499px] whitespace-nowrap tracking-[-0.02em]">마음의 어려움에는 저마다 다른 이유가 있습니다.</p>
       <div className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Medium',sans-serif] font-medium leading-[0] left-[952.5px] text-[#5b6b5e] text-[18px] text-center top-[2593px] whitespace-nowrap">
         <p className="leading-[1.6] mb-0 whitespace-pre">
           같은 불안도, 같은 무기력도
@@ -1220,13 +1291,17 @@ function Frame79() {
         <p className="leading-[1.6] mb-0 whitespace-pre">​</p>
         <p className="leading-[1.6] whitespace-pre">나에게 맞는 속도로, 나에게 맞는 방법을 함께 찾아갑니다.</p>
       </div>
-      <p className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Medium','Batang',serif] font-medium leading-[1.4] left-1/2 text-[128px] text-center text-white top-[374px] tracking-[-2.56px] whitespace-nowrap">
-        마음에도
-        <br aria-hidden />
-        머물 곳이 필요하니까.
-      </p>
-      <Component className="-translate-x-1/2 absolute bg-[#0c2d13] h-[64px] left-[calc(50%+0.5px)] overflow-clip rounded-[100px] top-[841px] w-[257px]" />
-      <Frame />
+      <div className="-translate-x-1/2 absolute left-1/2 top-[500px]">
+      <HeroLogo />
+      </div>
+<p className="hero-title -translate-x-1/2 absolute font-['Noto_Serif_KR:Medium','Batang',serif] font-medium leading-[1.4] left-1/2 text-[128px] text-center text-white top-[374px] tracking-[-2.56px] whitespace-nowrap">
+  마음에도
+  <br />
+  머물 곳이 필요하니까.
+</p>
+<div className="hero-button -translate-x-1/2 absolute left-[calc(50%+0.5px)] top-[841px]">
+  <Component className="bg-[#0c2d13] h-[64px] overflow-clip rounded-[100px] w-[257px]" />
+</div>      <Frame />
     </div>
   );
 }

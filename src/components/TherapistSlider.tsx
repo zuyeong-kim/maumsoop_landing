@@ -78,7 +78,7 @@ function TherapistProfile({ therapist }: { therapist: (typeof THERAPISTS)[number
           position: "absolute",
           left: "320px",
           top: "229px",
-          width: "364px",
+          width: "390px",
           display: "flex",
           flexDirection: "column",
           gap: "36px",
