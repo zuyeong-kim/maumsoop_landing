@@ -12,6 +12,9 @@ import imgD0195A7421Ab4E0A8B1CD92B7F8C857E1 from "./43b4b628e0414b8023fa2ae11c5c
 import img52E54Cbf3Ca3493691D4F48Eecb9Daf31 from "./31d7b7de2f643ca47b0ede8123656df2110376a6.png"
 import imgFrame16 from "./8a614344d05b7c4cc6333735ef1c6db30993c7f4.png"
 import { imgVector } from "./svg-qo56h"
+
+import FadeUp from "../FadeUp.tsx";
+
 type Component1Props = {
   className?: string
   property1?: "Frame 50" | "Frame 51"
@@ -1379,6 +1382,7 @@ function Frame5() {
 
 function Frame6() {
   return (
+    <FadeUp>
     <div className="absolute h-[403px] left-[1320px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
@@ -1395,6 +1399,7 @@ function Frame6() {
         className="absolute border border-[#f6f5f5] border-solid inset-0 rounded-[202px]"
       />
     </div>
+    </FadeUp>
   )
 }
 

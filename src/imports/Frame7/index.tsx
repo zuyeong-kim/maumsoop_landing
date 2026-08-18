@@ -13,6 +13,7 @@ import img52E54Cbf3Ca3493691D4F48Eecb9Daf31 from "./31d7b7de2f643ca47b0ede812365
 import imgFrame16 from "./8a614344d05b7c4cc6333735ef1c6db30993c7f4.png";
 import { imgVector } from "./svg-qo56h";
 
+import FadeUp  from "@/components/FadeUp";
 
 
 type Component1Props = {
@@ -982,6 +983,7 @@ function Frame75() {
 
 function Frame3() {
   return (
+    <FadeUp delay={0}>
     <div className="absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
@@ -991,6 +993,7 @@ function Frame3() {
       </div>
       <div aria-hidden className="absolute border border-[#f6f5f5] border-solid inset-0 rounded-[202px]" />
     </div>
+    </FadeUp>
   );
 }
 
