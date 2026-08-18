@@ -26,7 +26,7 @@ function LogoMark() {
     <img
       src={logo}
       alt="마음숲"
-      className="w-[75px] h-auto shrink-0"
+      className="w-[130px] h-auto shrink-0"
     />
   );
 }
