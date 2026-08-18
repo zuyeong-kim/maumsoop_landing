@@ -139,18 +139,6 @@ export default function SiteHeader() {
           }}
         >
           <LogoMark />
-          <span
-            style={{
-              fontFamily: "'Noto Serif KR:Medium', sans-serif",
-              fontWeight: 500,
-              fontSize: "20px",
-              color: "#0c2d13",
-              lineHeight: "normal",
-              whiteSpace: "nowrap",
-            }}
-          >
-            마음숲
-          </span>
         </button>
 
         {/* Nav items – centered */}
