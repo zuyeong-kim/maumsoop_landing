@@ -363,7 +363,7 @@ export default function TherapistSlider() {
           position: "absolute",
           left: "320px",
           top: "83px",
-          fontFamily: "'Noto Serif KR:Regular', sans-serif",
+          fontFamily: "'Noto Serif KR', sans-serif",
           fontWeight: 400,
           fontSize: "18px",
           color: "#5b6b5e",

@@ -7,7 +7,36 @@ const HEADER_H = 64;
 const SCROLL_OFFSET = 24; // extra breathing room below header
 
 function scrollTo(y: number) {
-  window.scrollTo({ top: Math.max(0, y - HEADER_H - SCROLL_OFFSET), behavior: "smooth" });
+  const startY = window.scrollY;
+  const targetY = Math.max(0, y - HEADER_H - SCROLL_OFFSET);
+  const distance = targetY - startY;
+
+  const duration = 900;
+  let startTime: number | null = null;
+
+  const easeInOutCubic = (t: number) => {
+    return t < 0.5
+      ? 4 * t * t * t
+      : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  };
+
+  const animateScroll = (currentTime: number) => {
+    if (startTime === null) {
+      startTime = currentTime;
+    }
+
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easedProgress = easeInOutCubic(progress);
+
+    window.scrollTo(0, startY + distance * easedProgress);
+
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
+  };
+
+  requestAnimationFrame(animateScroll);
 }
 
 /* Section targets (absolute page px, based on design coordinates) */
@@ -80,9 +109,13 @@ function BookingButton({ onClick }: { onClick: () => void }) {
 
 /* ── Single nav item ── */
 function NavItem({ label, onClick }: { label: string; onClick: () => void }) {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <button
       onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       style={{
         background: "none",
         border: "none",
@@ -91,10 +124,14 @@ function NavItem({ label, onClick }: { label: string; onClick: () => void }) {
         fontFamily: "'Noto Serif KR:Medium', 'Batang', serif",
         fontWeight: 600,
         fontSize: "18px",
-        color: "#0c2d13",
+
+        color: hovered ? "#184E24" : "#0c2d13",
+
         lineHeight: "normal",
         whiteSpace: "nowrap",
         flexShrink: 0,
+
+        transition: "color 0.25s ease",
       }}
     >
       {label}
