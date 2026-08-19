@@ -15,8 +15,9 @@ import { imgVector } from "./svg-qo56h";
 
 import maumLogo from "@/imports/maum_logo.svg";
 import HeroLogo from "@/imports/HeroLogo";
+import quickConsultIcon from "@/imports/QuickConsult.svg";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -148,8 +149,8 @@ function Frame54() {
 function Frame10() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[15px] items-start leading-[normal] left-[36px] not-italic top-[268px] w-[248px]">
-      <p className="font-['Pretendard:Bold',sans-serif] relative shrink-0 text-[#0c2d13] text-[20px] w-full">개인상담</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#5b6b5e] text-[14px] w-full">
+      <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#0c2d13] text-[20px] w-full">개인상담</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[140%] relative shrink-0 text-[#5b6b5e] text-[14px] w-full">
         나의 감정과 생각을 천천히 들여다보며
         <br aria-hidden />
         현재의 어려움을 이해하고 변화를 찾아갑니다.
@@ -171,7 +172,7 @@ function Frame9() {
 
 function Frame7() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[401px] left-[454px] overflow-clip rounded-[15px] top-[288px] w-[487px]">
+    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[454px] overflow-clip rounded-[15px] top-[288px] w-[487px]">
       <Frame10 />
       <Frame9 />
     </div>
@@ -181,8 +182,8 @@ function Frame7() {
 function Frame12() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[15px] items-start leading-[normal] left-[36px] not-italic top-[268px] w-[248px]">
-      <p className="font-['Pretendard:Bold',sans-serif] min-w-full relative shrink-0 text-[#0c2d13] text-[20px] w-[min-content]">심리검사</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#5b6b5e] text-[14px] whitespace-nowrap">
+      <p className="font-['Pretendard',sans-serif] font-bold min-w-full relative shrink-0 text-[#0c2d13] text-[20px] w-[min-content]">심리검사</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[140%] relative shrink-0 text-[#5b6b5e] text-[14px] whitespace-nowrap">
         객관적인 검사를 통해 현재의 마음 상태와 성향을 이해하고
         <br aria-hidden />
         나를 조금 더 깊이 알아갑니다.
@@ -206,7 +207,7 @@ function Frame13() {
 
 function Frame11() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[401px] left-[454px] overflow-clip rounded-[15px] top-[737px] w-[487px]">
+    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[454px] overflow-clip rounded-[15px] top-[737px] w-[487px]">
       <Frame12 />
       <Frame13 />
     </div>
@@ -216,8 +217,8 @@ function Frame11() {
 function Frame14() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[15px] items-start leading-[normal] left-[36px] not-italic top-[268px] w-[248px]">
-      <p className="font-['Pretendard:Bold',sans-serif] min-w-full relative shrink-0 text-[#0c2d13] text-[20px] w-[min-content]">관계상담</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#5b6b5e] text-[14px] whitespace-nowrap">
+      <p className="font-['Pretendard',sans-serif] font-bold min-w-full relative shrink-0 text-[#0c2d13] text-[20px] w-[min-content]">관계상담</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[140%] relative shrink-0 text-[#5b6b5e] text-[14px] whitespace-nowrap">
         가족, 연인, 직장 등 관계 속에서 반복되는 어려움을 살펴보고
         <br aria-hidden />
         건강한 관계를 만들어가는 방법을 찾아갑니다.
@@ -240,7 +241,7 @@ function Frame15() {
 
 function Frame8() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[401px] left-[991px] overflow-clip rounded-[15px] top-[288px] w-[487px]">
+    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[991px] overflow-clip rounded-[15px] top-[288px] w-[487px]">
       <Frame14 />
       <Frame15 />
     </div>
@@ -250,8 +251,8 @@ function Frame8() {
 function Frame17() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[15px] items-start leading-[normal] left-[36px] not-italic top-[268px] w-[248px]">
-      <p className="font-['Pretendard:Bold',sans-serif] min-w-full relative shrink-0 text-[#0c2d13] text-[20px] w-[min-content]">심리치료</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#5b6b5e] text-[14px] whitespace-nowrap">
+      <p className="font-['Pretendard',sans-serif] font-bold min-w-full relative shrink-0 text-[#0c2d13] text-[20px] w-[min-content]">심리치료</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[140%] relative shrink-0 text-[#5b6b5e] text-[14px] whitespace-nowrap">
         현재의 어려움과 마음의 상태를 살펴보고,
         <br aria-hidden />
         개인에게 적합한 치료적 접근을 통해 변화를 돕습니다.
@@ -277,7 +278,7 @@ function Frame18() {
 
 function Frame16() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[401px] left-[991px] overflow-clip rounded-[15px] top-[737px] w-[487px]">
+    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[991px] overflow-clip rounded-[15px] top-[737px] w-[487px]">
       <Frame17 />
       <Frame18 />
     </div>
@@ -295,7 +296,7 @@ function Frame21() {
 
 function Frame22() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] gap-[10px] items-center not-italic relative shrink-0 text-[#5b6b5e] text-[18px] tracking-[-0.36px] w-full">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal gap-[10px] items-center not-italic relative shrink-0 text-[#5b6b5e] text-[18px] tracking-[-0.36px] w-full">
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0">#성인상담</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0">#커플상담</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0">#부부상담</p>
@@ -317,7 +318,7 @@ function Frame19() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[36px] items-start left-[320px] top-[1737px] w-[364px]">
       <Frame20 />
-      <ul className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] block font-['Pretendard:Regular',sans-serif] leading-[0] list-disc min-w-full not-italic relative shrink-0 text-[#2b2b2b] text-[18px] tracking-[-0.36px] w-[min-content]">
+      <ul className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] block font-['Pretendard',sans-serif] font-normal leading-[163%] list-disc min-w-full not-italic relative shrink-0 text-[#2b2b2b] text-[18px] tracking-[-0.36px] w-[min-content]">
         <li className="mb-0 ms-[27px]">
           <span className="leading-[1.63] whitespace-nowrap">허그맘허그인 심리상담센터 개인. 가족. EAP상담</span>
         </li>
@@ -703,7 +704,7 @@ function Frame40() {
 
 function Frame59() {
   return (
-    <div className="[word-break:break-word] content-stretch flex font-['Pretendard:Medium',sans-serif] gap-[3px] items-center leading-[1.6] not-italic relative shrink-0 text-[16px] w-full whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex font-['Pretendard',sans-serif] font-medium gap-[3px] items-center leading-[1.6] not-italic relative shrink-0 text-[16px] w-full whitespace-nowrap">
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[#0c2d13]">이름</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[#ff383c]">*</p>
     </div>
@@ -712,9 +713,12 @@ function Frame59() {
 
 function Frame50() {
   return (
-    <div className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[40px] overflow-clip relative rounded-[6px] shrink-0 w-[460px]">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard:Regular',sans-serif] leading-[1.6] left-[15px] not-italic text-[#c9cdca] text-[14px] top-[calc(50%-5px)] whitespace-nowrap">홍길동</p>
-    </div>
+    <input
+      type="text"
+      name="name"
+      placeholder="홍길동"
+      className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[40px] rounded-[6px] shrink-0 w-[460px] px-[15px] font-['Pretendard',sans-serif] text-[14px] text-[#2b2b2b] outline-none placeholder:text-[#c9cdca] focus:border-[#0c2d13]"
+    />
   );
 }
 
@@ -738,9 +742,11 @@ function Frame62() {
 
 function Frame52() {
   return (
-    <div className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[200px] overflow-clip relative rounded-[6px] shrink-0 w-[460px]">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard:Regular',sans-serif] leading-[1.6] left-[19px] not-italic text-[#c9cdca] text-[14px] top-[19px] whitespace-nowrap">상담받고 싶으신 문제를 간단히 적어주세요.</p>
-    </div>
+    <textarea
+      placeholder="상담받고 싶으신 문제를 간단히 적어주세요."
+      name="message"
+      className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[200px] rounded-[6px] shrink-0 w-[460px] px-[19px] py-[16px] font-['Pretendard',sans-serif] text-[14px] text-[#2b2b2b] outline-none resize-none placeholder:text-[#c9cdca] focus:border-[#0c2d13]"
+    />
   );
 }
 
@@ -764,9 +770,13 @@ function Frame60() {
 
 function Frame56() {
   return (
-    <div className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[40px] overflow-clip relative rounded-[6px] shrink-0 w-[220px]">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard:Regular',sans-serif] leading-[1.6] left-[11px] not-italic text-[#c9cdca] text-[14px] top-[calc(50%-5px)] whitespace-nowrap">-없이 숫자만 입력해주세요</p>
-    </div>
+    <input
+      type="tel"
+      name="phone"
+      inputMode="numeric"
+      placeholder="- 없이 숫자만 입력해주세요"
+      className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[40px] rounded-[6px] shrink-0 w-[220px] px-[11px] font-['Pretendard',sans-serif] text-[14px] text-[#2b2b2b] outline-none placeholder:text-[#c9cdca] focus:border-[#0c2d13]"
+    />
   );
 }
 
@@ -802,10 +812,11 @@ function FeCalendar() {
 
 function Frame58() {
   return (
-    <div className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[40px] overflow-clip relative rounded-[6px] shrink-0 w-[220px]">
-      <FeCalendar />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard:Regular',sans-serif] leading-[1.6] left-[16px] not-italic text-[#c9cdca] text-[14px] top-[calc(50%-5px)] whitespace-nowrap">날짜 / 시간 선택</p>
-    </div>
+    <input
+      type="datetime-local"
+      name="datetime"
+      className="bg-[#fbfbfb] border border-[#cfd9d1] border-solid h-[40px] rounded-[6px] shrink-0 w-[220px] px-[15px] font-['Pretendard',sans-serif] text-[14px] text-[#2b2b2b] outline-none focus:border-[#0c2d13]"
+    />
   );
 }
 
@@ -839,7 +850,11 @@ function Frame64() {
 function Frame63() {
   return (
     <div className="absolute content-stretch flex gap-[3px] items-center left-[62px] top-[503px]">
-      <div className="border border-[#5b6b5e] border-solid relative rounded-[3px] shrink-0 size-[16px]" />
+    <input
+      type="checkbox"
+      name="agreed"
+      className="relative shrink-0 size-[16px] accent-[#0c2d13] cursor-pointer"
+    />
       <Frame64 />
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[#ff383c] text-[16px] whitespace-nowrap">*</p>
     </div>
@@ -847,14 +862,42 @@ function Frame63() {
 }
 
 function Frame48() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+
+    const data = {
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      datetime: formData.get("datetime"),
+      message: formData.get("message"),
+      agreed: formData.get("agreed") === "on",
+    };
+
+    console.log(data);
+    alert("상담 예약 정보가 확인되었습니다!");
+  };
+
   return (
-    <div className="absolute bg-white border border-[#cfd9d1] border-solid h-[659px] left-[934px] overflow-clip rounded-[25px] top-[2394px] w-[567px]">
+    <form
+      onSubmit={handleSubmit}
+      className="absolute bg-white border border-[#cfd9d1] border-solid h-[659px] left-[934px] overflow-clip rounded-[25px] top-[2394px] w-[567px]"
+    >
       <Frame49 />
       <Frame51 />
       <Frame53 />
       <Frame63 />
-      <Component3 className="-translate-x-1/2 absolute bg-[#0c2d13] h-[64px] left-1/2 overflow-clip rounded-[100px] top-[543px] w-[461px]" />
-    </div>
+
+<button
+  type="submit"
+  className="-translate-x-1/2 absolute left-1/2 top-[543px] h-[64px] w-[461px] bg-[#0c2d13] rounded-[100px] cursor-pointer border-0 p-0 flex items-center justify-center"
+>
+  <span className="font-['Noto_Serif_KR',serif] font-extrabold text-[16px] text-white tracking-[-0.32px]">
+    상담 예약하기
+  </span>
+</button>
+    </form>
   );
 }
 
@@ -870,7 +913,7 @@ function Frame67() {
   return (
     <div className="content-stretch flex gap-[9px] items-center relative shrink-0">
       <Frame66 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-mediumleading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[20px] whitespace-nowrap">상담 예약</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[20px] whitespace-nowrap">상담 예약</p>
     </div>
   );
 }
@@ -879,7 +922,7 @@ function Frame69() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
       <Frame67 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[20px] whitespace-nowrap">온라인 또는 전화로 예약해주세요.</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[16px] whitespace-nowrap">온라인 또는 전화로 예약해주세요.</p>
     </div>
   );
 }
@@ -923,7 +966,7 @@ function Frame70() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0">
       <Frame71 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[20px] whitespace-nowrap">상담 가능한 일정을 안내해드려요.</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[16px] whitespace-nowrap">상담 가능한 일정을 안내해드려요.</p>
     </div>
   );
 }
@@ -949,7 +992,7 @@ function Frame76() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0">
       <Frame77 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[20px] whitespace-nowrap">예약한 일정에 편안하게 이야기를 시작합니다.</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-[#2b2b2b] text-[16px] whitespace-nowrap">예약한 일정에 편안하게 이야기를 시작합니다.</p>
     </div>
   );
 }
@@ -1333,6 +1376,263 @@ export default function Frame1() {
     <div className="bg-white relative size-full">
       <Frame75 />
       <Frame79 />
+      <QuickConsult />
     </div>
   );
+
+function QuickConsult() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [message, setMessage] = useState("");
+const [messages, setMessages] = useState<
+  { sender: "user" | "bot"; text: string }[]
+>([]);
+
+const handleSend = () => {
+  const trimmedMessage = message.trim();
+
+  if (!trimmedMessage) return;
+
+  // 내가 보낸 메시지
+  setMessages((prev) => [
+    ...prev,
+    {
+      sender: "user",
+      text: trimmedMessage,
+    },
+  ]);
+
+  setMessage("");
+
+  // 1초 뒤 자동답변
+  setTimeout(() => {
+    setMessages((prev) => [
+      ...prev,
+      {
+        sender: "bot",
+        text: "안녕하세요. 마음숲 심리상담센터입니다. 상담 내용을 확인하고 있습니다.",
+      },
+    ]);
+  }, 1000);
+};
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSend();
+    }
+  };
+
+  return (
+    <>
+      {/* 상담창 */}
+      {isOpen && (
+        <div
+          className="
+            fixed
+            right-[40px]
+            bottom-[115px]
+            z-[199]
+            w-[380px]
+            h-[600px]
+            bg-white
+            rounded-[20px]
+            overflow-hidden
+            shadow-[0_10px_30px_rgba(0,0,0,0.12)]
+            border
+            border-[#e7ece8]
+          "
+        >
+          {/* 상단 영역 */}
+          <div
+            className="
+              h-[90px]
+              px-[24px]
+              flex
+              flex-col
+              justify-center
+              bg-[linear-gradient(145deg,#174F24_0%,#0C2D13_55%,#031D09_100%)]
+              text-white
+            "
+          >
+            <p className="font-['Pretendard',sans-serif] font-semibold text-[16px]">
+              마음숲 심리상담센터
+            </p>
+
+            <p className="font-['Pretendard',sans-serif] text-[12px] mt-[5px]">
+              실시간 상담
+            </p>
+          </div>
+
+          {/* 채팅 내용 영역 */}
+          <div
+            className="
+              h-[436px]
+              bg-white
+              px-[20px]
+              py-[20px]
+              overflow-y-auto
+              flex
+              flex-col
+              gap-[10px]
+            "
+          >
+            {messages.map((item, index) => (
+  <div
+    key={index}
+    className={`
+      max-w-[260px]
+      px-[14px]
+      py-[10px]
+      rounded-[16px]
+      font-['Pretendard',sans-serif]
+      text-[14px]
+      leading-[1.5]
+      break-words
+
+      ${
+        item.sender === "user"
+          ? "self-end bg-[#0c2d13] text-white rounded-br-[4px]"
+          : "self-start bg-[#f1f4f1] text-[#2b2b2b] rounded-bl-[4px]"
+      }
+    `}
+  >
+    {item.text}
+  </div>
+))}
+          </div>
+
+          {/* 메시지 입력 영역 */}
+          <div
+            className="
+              h-[74px]
+              border-t
+              border-[#dce5de]
+              px-[18px]
+              flex
+              items-center
+              gap-[10px]
+              bg-white
+            "
+          >
+            <input
+              type="text"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="메시지를 입력하세요..."
+              className="
+                h-[40px]
+                flex-1
+                rounded-[100px]
+                border
+                border-[#dce5de]
+                px-[16px]
+                font-['Pretendard',sans-serif]
+                text-[13px]
+                text-[#2b2b2b]
+                outline-none
+                placeholder:text-[#c9cdca]
+                focus:border-[#0c2d13]
+              "
+            />
+
+            <button
+              type="button"
+              onClick={handleSend}
+              aria-label="메시지 보내기"
+              className="
+                size-[40px]
+                shrink-0
+                rounded-full
+                bg-[#0c2d13]
+                hover:bg-[#031D09]
+                text-white
+                flex
+                items-center
+                justify-center
+                cursor-pointer
+                border-0
+                p-0
+                transition-all
+                duration-300
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21 3L10 14"
+                  stroke="white"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+
+                <path
+                  d="M21 3L14 21L10 14L3 10L21 3Z"
+                  stroke="white"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* 실시간 상담 퀵 버튼 */}
+      <button
+        type="button"
+        aria-label={isOpen ? "상담창 닫기" : "실시간 상담"}
+        onClick={() => setIsOpen(!isOpen)}
+        className="
+          fixed
+          right-[40px]
+          bottom-[40px]
+          z-[200]
+          size-[60px]
+          bg-[linear-gradient(145deg,#174F24_0%,#0C2D13_55%,#031D09_100%)]
+          rounded-[18px]
+          border-0
+          p-0
+          cursor-pointer
+          shadow-[0_6px_16px_rgba(12,45,19,0.22)]
+          flex
+          items-center
+          justify-center
+          transition-all
+          duration-300
+          ease-out
+          hover:-translate-y-[3px]
+          hover:shadow-[0_10px_22px_rgba(12,45,19,0.28)]
+        "
+      >
+        {isOpen ? (
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M6 6L18 18M18 6L6 18"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        ) : (
+          <img
+            src={quickConsultIcon}
+            alt=""
+            className="w-[32px] h-[32px]"
+          />
+        )}
+      </button>
+    </>
+  );
+}
 }

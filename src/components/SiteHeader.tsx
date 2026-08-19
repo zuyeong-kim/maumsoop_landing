@@ -121,7 +121,7 @@ function NavItem({ label, onClick }: { label: string; onClick: () => void }) {
         border: "none",
         padding: 0,
         cursor: "pointer",
-        fontFamily: "'Noto Serif KR:Medium', 'Batang', serif",
+        fontFamily: "'Noto Serif KR', 'Batang', serif",
         fontWeight: 600,
         fontSize: "18px",
 
