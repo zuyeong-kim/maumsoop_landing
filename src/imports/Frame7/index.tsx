@@ -422,7 +422,7 @@ function Frame23() {
 function Frame28() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex gap-[30px] items-center justify-center leading-[normal] left-[320px] not-italic top-[345px] whitespace-nowrap font-semibold">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[20px] font-['Noto_Serif_KR',serif] font-bold  text-[#2b2b2b]">대표전화</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[16px] font-['Pretendard',sans-serif] font-medium  text-[#2b2b2b]">대표전화</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[27px] font-['Pretendard',sans-serif] font-medium text-[#2b2b2b]">1588-1588</p>
     </div>
   );
@@ -430,7 +430,7 @@ function Frame28() {
 
 function Frame32() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-semibold gap-[20px] items-start relative shrink-0 text-[18px] w-[56px]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-semibold gap-[15px] items-start relative shrink-0 text-[18px] w-[56px]">
       <p className="relative shrink-0 w-full">평일</p>
       <p className="relative shrink-0 w-full">토요일</p>
       <p className="relative shrink-0 w-full whitespace-nowrap">점심시간</p>
@@ -440,7 +440,7 @@ function Frame32() {
 
 function Frame33() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Regular',sans-serif] gap-[20px] items-start relative shrink-0 text-[18px] w-[105px] whitespace-nowrap">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-normal gap-[15px] items-start relative shrink-0 text-[18px] w-[105px] whitespace-nowrap">
       <p className="relative shrink-0">10:00 ~ 20:00</p>
       <p className="relative shrink-0">10:00 ~ 17:00</p>
       <p className="relative shrink-0">13:00 ~ 14:00</p>
@@ -461,7 +461,7 @@ function Frame30() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-[236px]">
       <Frame29 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Regular',sans-serif] min-w-full relative shrink-0 text-[16px] text-white w-[min-content] whitespace-nowrap">*휴일·공휴일은 진료를 하지 않습니다.</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] font-normal min-w-full relative shrink-0 text-[16px] text-white w-[min-content] whitespace-nowrap">* 휴일·공휴일은 진료를 하지 않습니다.</p>
     </div>
   );
 }
@@ -469,7 +469,7 @@ function Frame30() {
 function Frame31() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex gap-[30px] items-start leading-[normal] left-[320px] not-italic top-[420px]">
-      <p className="font-['Noto_Serif_KR',serif] font-bold relative shrink-0 text-[#2b2b2b] text-[20px] whitespace-nowrap">상담시간</p>
+      <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#2b2b2b] text-[16px] whitespace-nowrap">상담시간</p>
       <Frame30 />
     </div>
   );
@@ -508,7 +508,7 @@ function Frame37() {
 function Frame36() {
   return (
     <a
-      href="https://map.naver.com/"
+      href="https://map.naver.com/p/search/%EA%B7%B8%EB%A6%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%84%ED%8A%B8%ED%95%99%EC%9B%90%20%EC%8B%A0%EB%8F%84%EB%A6%BC%EC%A0%90?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202608191705%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EA%B7%B8%EB%A6%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%84%ED%8A%B8%ED%95%99%EC%9B%90%20%EC%8B%A0%EB%8F%84%EB%A6%BC%EC%A0%90"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="네이버 지도"
@@ -556,7 +556,7 @@ function Frame39() {
 function Frame38() {
   return (
     <a
-      href="https://map.kakao.com/"
+      href="https://kko.to/zKdJnJJTpo"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="카카오맵"
@@ -571,7 +571,7 @@ function Frame35() {
   return (
     <div className="absolute content-stretch flex items-center left-[320px] top-[250px]">
       
-      <p className="font-['Noto_Serif_KR',sans-serif] font-bold text-[#2b2b2b] text-[20px] whitespace-nowrap">
+      <p className="font-['Pretendard',sans-serif] font-medium text-[#2b2b2b] text-[16px] whitespace-nowrap">
         길찾기
       </p>
 
@@ -628,8 +628,8 @@ function Frame42() {
 function Frame45() {
   return (
     <div className="content-stretch flex gap-[10px] items-center leading-[1.4] relative shrink-0 text-[#2b2b2b]">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Medium',sans-serif] relative shrink-0">대표자</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Regular',sans-serif] relative shrink-0">김하늘</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] font-medium relative shrink-0">대표자</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] font-normal relative shrink-0">김하늘</p>
     </div>
   );
 }
@@ -637,10 +637,10 @@ function Frame45() {
 function Frame44() {
   return (
     <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Medium',sans-serif] leading-[1.6] relative shrink-0 text-[#2b2b2b]">개인정보취급방침</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Regular',sans-serif] leading-[normal] relative shrink-0 text-black">|</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#2b2b2b]">마음숲 심리상담센터</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard:Regular',sans-serif] leading-[normal] relative shrink-0 text-black">|</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] font-medium leading-[1.6] relative shrink-0 text-[#2b2b2b]">개인정보취급방침</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] leading-[normal] relative shrink-0 text-black">|</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#2b2b2b]">마음숲 심리상담센터</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Pretendard',sans-serif] font-normal leading-[normal] relative shrink-0 text-black">|</p>
       <Frame45 />
     </div>
   );
@@ -657,8 +657,8 @@ function Frame47() {
 
 function Frame46() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] gap-[20px] items-center relative shrink-0 w-full">
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] leading-[normal] relative shrink-0 text-[#2b2b2b]">서울 ○○구 ○○로 00, 3층</p>
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal gap-[20px] items-center relative shrink-0 w-full">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] leading-[normal] relative shrink-0 text-[#2b2b2b]">서울 구로구 새말로 97 6층</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] leading-[normal] relative shrink-0 text-black">|</p>
       <Frame47 />
     </div>
@@ -688,12 +688,12 @@ function Frame40() {
     <div className="absolute h-[923px] left-0 top-[3232px] w-[1920px]">
       <div className="absolute bg-[#b8c5bb] h-[923px] left-0 top-0 w-[1920px]" />
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[101px] whitespace-nowrap">오시는 길</p>
-      <p className="[word-break:break-word] absolute font-['Pretendard:SemiBold',sans-serif] font-semibold leading-[normal] left-[320px] not-italic text-[#2b2b2b] text-[24px] top-[160px] whitespace-nowrap">서울 ○○구 ○○로 00, 3층</p>
+      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-semibold leading-[normal] left-[320px] not-italic text-[#2b2b2b] text-[24px] top-[160px] whitespace-nowrap">서울 구로구 새말로 97 6층</p>
       <Frame28 />
       <Frame31 />
       <Frame34 />
       <Frame35 />
-      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard:Regular',sans-serif] leading-[0] left-[320px] not-italic text-[#2b2b2b] text-[14px] top-[633px] tracking-[-0.28px] whitespace-nowrap">
+      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard',sans-serif] font-normal leading-[0] left-[320px] not-italic text-[#2b2b2b] text-[14px] top-[633px] tracking-[-0.28px] whitespace-nowrap">
         <p className="leading-[normal] mb-0">Copyright ⓒ 2026 마음숲 심리상담센터 ALL RIGHTS RESERVED.</p>
         <p className="leading-[normal]">All Designed by. 김주영</p>
       </div>

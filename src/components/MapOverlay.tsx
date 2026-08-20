@@ -3,9 +3,8 @@
    left = 800px, width = 800px, height = 540px, border-radius = 35px.
    Address shown in the design is a placeholder (서울 ○○구 ○○로 00, 3층). */
 export default function MapOverlay() {
-  const mapSrc =
-    "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%EC%8B%9C+%EB%A7%88%ED%8F%AC%EA%B5%AC+%ED%86%A0%EC%A0%95%EB%A1%9C&t=m&z=16&ie=UTF8&iwloc=near&output=embed";
-
+const mapSrc =
+  "https://maps.google.com/maps?q=서울+구로구+새말로+97+6층&t=m&z=16&ie=UTF8&iwloc=near&output=embed";
   return (
     <div
       style={{
