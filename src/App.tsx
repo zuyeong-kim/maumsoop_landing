@@ -8,7 +8,7 @@ import MapOverlay from "@/components/MapOverlay";
 
 export default function App() {
   return (
-    <div className="overflow-x-hidden relative">
+    <div className="overflow-x-clip relative">
       <SiteHeader />
       <div style={{ width: "1920px", minHeight: "100vh", position: "relative" }}>
         {/*
