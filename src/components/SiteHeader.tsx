@@ -147,8 +147,7 @@ export default function SiteHeader() {
         position: "fixed",
         top: 0,
         left: 0,
-        width: "100%",
-        minWidth: "1920px",
+        right: 0,        
         height: `${HEADER_H}px`,
         background: "white",
         boxShadow: "0px 2px 8px 0px rgba(0,0,0,0.08)",
@@ -156,7 +155,7 @@ export default function SiteHeader() {
       }}
     >
       {/* Inner 1920px layout frame */}
-      <div style={{ position: "relative", width: "1920px", height: "100%", margin: "0 auto" }}>
+      <div style={{ position: "relative", height: "100%"}}>
 
         {/* Logo */}
         <button
