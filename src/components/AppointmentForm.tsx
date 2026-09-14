@@ -307,9 +307,6 @@ export default function AppointmentForm() {
 
   /* Outer card — no overflow:hidden, height auto so errors don't clip */
   const cardStyle: React.CSSProperties = {
-    position: "absolute",
-    top: "5240px",
-    left: "934px",
     width: "567px",
     minHeight: "659px",
     background: "white",

@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="overflow-x-clip relative">
       <SiteHeader />
-      <div style={{ width: "1920px", minHeight: "100vh", position: "relative" }}>
+      <div style={{ width: "100%", minHeight: "100vh", position: "relative" }}>
         {/*
           HeroVideoBackground and BookingSectionBg are rendered BEFORE Frame1 so they
           sit below Frame1 in DOM paint order. Frame1's bg-white is overridden to
@@ -20,9 +20,6 @@ export default function App() {
 
         <Frame1 />
         <HeroCTAButton />
-        <TherapistSlider />
-        <AppointmentForm />
-        <MapOverlay />
       </div>
     </div>
   );

@@ -71,9 +71,9 @@ function BookingButton({ onClick }: { onClick: () => void }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         position: "absolute",
-        left: "1493px",
+        right: 0,
         top: "50%",
-        transform: `translateY(calc(-50% ${hovered ? "- 3px" : "+ 0px"}))`,
+        transform: `translateY(-50%)`,
         width: "107px",
         height: "48px",
         borderRadius: "100px",
@@ -155,14 +155,22 @@ export default function SiteHeader() {
       }}
     >
       {/* Inner 1920px layout frame */}
-      <div style={{ position: "relative", height: "100%"}}>
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          maxWidth: "1280px",
+          margin: "0 auto",
+          height: "100%"
+      }}
+        >
 
         {/* Logo */}
         <button
           onClick={() => scrollTo(SECTIONS.hero)}
           style={{
             position: "absolute",
-            left: "320px",
+            left: 0,
             top: "17px",
             background: "none",
             border: "none",

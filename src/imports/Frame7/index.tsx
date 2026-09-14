@@ -22,6 +22,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+import MapOverlay from "@/components/MapOverlay";
+import AppointmentForm from "@/components/AppointmentForm";
+import TherapistSlider from "@/components/TherapistSlider";
+
 gsap.registerPlugin(ScrollTrigger);
 
 import TypingHero from "@/components/TypingHero";
@@ -135,7 +139,7 @@ function Component3({ className, property1 = "Component 7" }: Component3Props) {
 
 function Frame54() {
   return (
-    <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[33px] items-start leading-[1.6] left-[420px] top-[2394px] w-[229px]">
+    <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[33px] items-start leading-[1.6] left-[100px] top-[2394px] w-[229px]">
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Noto_Serif_KR:ExtraBold',sans-serif] not-italic relative shrink-0 text-[#0c2d13] text-[36px] w-full">상담 예약</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Noto_Serif_KR',sans-serif] font-medium relative shrink-0 text-[#5b6b5e] text-[18px] w-full whitespace-nowrap">
         혼자 정리하기 어려웠던 마음,
@@ -172,7 +176,7 @@ function Frame9() {
 
 function Frame7() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[454px] overflow-clip rounded-[15px] top-[288px] w-[487px]">
+    <div className="program-card bg-white border border-[#cfd9d1] border-solid h-[372px] overflow-clip rounded-[15px] w-[487px]">
       <Frame10 />
       <Frame9 />
     </div>
@@ -207,7 +211,7 @@ function Frame13() {
 
 function Frame11() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[454px] overflow-clip rounded-[15px] top-[737px] w-[487px]">
+    <div className="program-card bg-white border border-[#cfd9d1] border-solid h-[372px] overflow-clip rounded-[15px] w-[487px]">
       <Frame12 />
       <Frame13 />
     </div>
@@ -241,7 +245,7 @@ function Frame15() {
 
 function Frame8() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[991px] overflow-clip rounded-[15px] top-[288px] w-[487px]">
+    <div className="program-card bg-white border border-[#cfd9d1] border-solid h-[372px] overflow-clip rounded-[15px] w-[487px]">
       <Frame14 />
       <Frame15 />
     </div>
@@ -278,7 +282,7 @@ function Frame18() {
 
 function Frame16() {
   return (
-    <div className="program-card absolute bg-white border border-[#cfd9d1] border-solid h-[372px] left-[991px] overflow-clip rounded-[15px] top-[737px] w-[487px]">
+    <div className="program-card bg-white border border-[#cfd9d1] border-solid h-[372px] overflow-clip rounded-[15px] w-[487px]">
       <Frame17 />
       <Frame18 />
     </div>
@@ -310,31 +314,6 @@ function Frame20() {
     <div className="content-stretch flex flex-col gap-[40px] items-start leading-[1.4] relative shrink-0 w-[318px] whitespace-nowrap">
       <Frame21 />
       <Frame22 />
-    </div>
-  );
-}
-
-function Frame19() {
-  return (
-    <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[36px] items-start left-[320px] top-[1737px] w-[364px]">
-      <Frame20 />
-      <ul className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] block font-['Pretendard',sans-serif] font-normal leading-[163%] list-disc min-w-full not-italic relative shrink-0 text-[#2b2b2b] text-[18px] tracking-[-0.36px] w-[min-content]">
-        <li className="mb-0 ms-[27px]">
-          <span className="leading-[1.63] whitespace-nowrap">허그맘허그인 심리상담센터 개인. 가족. EAP상담</span>
-        </li>
-        <li className="mb-0 ms-[27px]">
-          <span className="leading-[1.63]">정다운상담클리닉 개인. 부부상담</span>
-        </li>
-        <li className="mb-0 ms-[27px]">
-          <span className="leading-[1.63]">라이트인유상담센터 개인. 부부. 영어상담</span>
-        </li>
-        <li className="mb-0 ms-[27px]">
-          <span className="leading-[1.63]">경북대학교 교육학과 강의 (학부 및 대학원)</span>
-        </li>
-        <li className="ms-[27px]">
-          <span className="leading-[1.63]">한국프로스포츠협회 프로스포츠 경기인 대상 상담</span>
-        </li>
-      </ul>
     </div>
   );
 }
@@ -421,7 +400,7 @@ function Frame23() {
 
 function Frame28() {
   return (
-    <div className="[word-break:break-word] absolute content-stretch flex gap-[30px] items-center justify-center leading-[normal] left-[320px] not-italic top-[345px] whitespace-nowrap font-semibold">
+    <div className="[word-break:break-word] absolute content-stretch flex gap-[30px] items-center justify-center leading-[normal] left-0 not-italic top-[345px] whitespace-nowrap font-semibold">
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[16px] font-['Pretendard',sans-serif] font-medium  text-[#2b2b2b]">대표전화</p>
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0 text-[27px] font-['Pretendard',sans-serif] font-medium text-[#2b2b2b]">1588-1588</p>
     </div>
@@ -468,15 +447,11 @@ function Frame30() {
 
 function Frame31() {
   return (
-    <div className="[word-break:break-word] absolute content-stretch flex gap-[30px] items-start leading-[normal] left-[320px] not-italic top-[420px]">
+    <div className="[word-break:break-word] absolute content-stretch flex gap-[30px] items-start leading-[normal] left-0 not-italic top-[420px]">
       <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#2b2b2b] text-[16px] whitespace-nowrap">상담시간</p>
       <Frame30 />
     </div>
   );
-}
-
-function Frame34() {
-  return <div className="absolute bg-[#9f9f9f] h-[540px] left-[800px] rounded-[35px] top-[127px] w-[800px]" />;
 }
 
 function IcomNaverMap() {
@@ -569,7 +544,7 @@ function Frame38() {
 
 function Frame35() {
   return (
-    <div className="absolute content-stretch flex items-center left-[320px] top-[250px]">
+    <div className="absolute content-stretch flex items-center left-0 top-[250px]">
       
       <p className="font-['Pretendard',sans-serif] font-medium text-[#2b2b2b] text-[16px] whitespace-nowrap">
         길찾기
@@ -676,7 +651,7 @@ function Frame43() {
 
 function Frame41() {
   return (
-    <div className="absolute content-stretch flex items-center justify-between left-[320px] top-[840px] w-[1280px]">
+    <div className="absolute content-stretch flex items-center justify-between left-0 top-[840px] w-[1280px]">
       <Frame42 />
       <Frame43 />
     </div>
@@ -685,19 +660,23 @@ function Frame41() {
 
 function Frame40() {
   return (
-    <div className="absolute h-[923px] left-0 top-[3232px] w-[1920px]">
-      <div className="absolute bg-[#b8c5bb] h-[923px] left-0 top-0 w-[1920px]" />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[101px] whitespace-nowrap">오시는 길</p>
-      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-semibold leading-[normal] left-[320px] not-italic text-[#2b2b2b] text-[24px] top-[160px] whitespace-nowrap">서울 구로구 새말로 97 6층</p>
+    <div className="absolute h-[923px] left-0 top-[3232px] w-full">
+      <div className="absolute bg-[#b8c5bb] inset-0" />
+
+      <div className="absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-[1280px] h-full">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[101px] whitespace-nowrap">오시는 길</p>
+      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-semibold leading-[normal] left-0 not-italic text-[#2b2b2b] text-[24px] top-[160px] whitespace-nowrap">서울 구로구 새말로 97 6층</p>
       <Frame28 />
       <Frame31 />
-      <Frame34 />
       <Frame35 />
-      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard',sans-serif] font-normal leading-[0] left-[320px] not-italic text-[#2b2b2b] text-[14px] top-[633px] tracking-[-0.28px] whitespace-nowrap">
+      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Pretendard',sans-serif] font-normal leading-[0] left-0 not-italic text-[#2b2b2b] text-[14px] top-[633px] tracking-[-0.28px] whitespace-nowrap">
         <p className="leading-[normal] mb-0">Copyright ⓒ 2026 마음숲 심리상담센터 ALL RIGHTS RESERVED.</p>
         <p className="leading-[normal]">All Designed by. 김주영</p>
       </div>
+      <MapOverlay />
       <Frame41 />
+      </div>
+    
     </div>
   );
 }
@@ -861,45 +840,6 @@ function Frame63() {
   );
 }
 
-function Frame48() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const formData = new FormData(e.currentTarget);
-
-    const data = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      datetime: formData.get("datetime"),
-      message: formData.get("message"),
-      agreed: formData.get("agreed") === "on",
-    };
-
-    console.log(data);
-    alert("상담 예약 정보가 확인되었습니다!");
-  };
-
-  return (
-    <form
-      onSubmit={handleSubmit}
-      className="absolute bg-white border border-[#cfd9d1] border-solid h-[659px] left-[934px] overflow-clip rounded-[25px] top-[2394px] w-[567px]"
-    >
-      <Frame49 />
-      <Frame51 />
-      <Frame53 />
-      <Frame63 />
-
-<button
-  type="submit"
-  className="-translate-x-1/2 absolute left-1/2 top-[543px] h-[64px] w-[461px] bg-[#0c2d13] rounded-[100px] cursor-pointer border-0 p-0 flex items-center justify-center"
->
-  <span className="font-['Noto_Serif_KR',serif] font-extrabold text-[16px] text-white tracking-[-0.32px]">
-    상담 예약하기
-  </span>
-</button>
-    </form>
-  );
-}
 
 function Frame66() {
   return (
@@ -999,7 +939,7 @@ function Frame76() {
 
 function Frame73() {
   return (
-    <div className="absolute content-stretch flex flex-col gap-[50px] items-start left-[420px] top-[2596px]">
+    <div className="absolute content-stretch flex flex-col gap-[50px] items-start left-[100px] top-[2596px]">
       <Frame72 />
       <Frame70 />
       <Frame76 />
@@ -1023,8 +963,9 @@ useGSAP(() => {
   });
 }, []);
   return (
-    <div className="absolute h-[4155px] left-0 top-[2966px] w-[1920px]">
-      <div className="-translate-x-1/2 absolute h-[1280px] left-1/2 top-[1979px] w-[1920px]" data-name="2be3fc5f-3811-49cf-ac21-adea4dcec099 1">
+    
+    <div className="absolute h-[4155px] left-0 top-[2966px] w-full">
+      <div className="-translate-x-1/2 absolute h-[1280px] left-1/2 top-[1979px] w-full" data-name="2be3fc5f-3811-49cf-ac21-adea4dcec099 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover opacity-80 pointer-events-none size-full" src={img2Be3Fc5F381149CfAc21Adea4Dcec0991} />
       </div>
       <div className="absolute h-0 left-0 top-[3632px] w-[1920px]">
@@ -1034,34 +975,38 @@ useGSAP(() => {
           </svg>
         </div>
       </div>
-      <div className="-translate-x-1/2 absolute bg-gradient-to-b from-[66.084%] from-white h-[2204px] left-1/2 rounded-bl-[200px] rounded-br-[200px] to-[#f5faf6] top-0 w-[1920px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+1.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[144px] whitespace-nowrap tracking-[0.02em]">당신의 마음에 맞는 상담을 만나보세요</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[1524px] whitespace-nowrap tracking-[0.02em]">당신의 이야기를 듣는 사람들</p>
-      <Frame54 />
-      <Frame7 />
-      <Frame11 />
-      <Frame8 />
-      <Frame16 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR',sans-serif] font-medium leading-[1.6] left-[320px] text-[#5b6b5e] text-[18px] top-[1587px] tracking-[-0.36px] whitespace-nowrap">
-        전문적인 경험과 따뜻한 시선으로
-        <br aria-hidden />
-        당신의 마음 곁에 함께합니다.
-      </p>
-      <div className="absolute h-[552px] left-[1207px] top-[1508px] w-[393px]" data-name="e5d42cef-a7b9-4e91-820d-970fafde30cc 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgE5D42CefA7B94E91820D970Fafde30Cc1} />
-      </div>
-      <Frame19 />
-      <Frame23 />
-      <Frame40 />
-      <Frame48 />
-      <Frame73 />
+      <div className="-translate-x-1/2 absolute bg-gradient-to-b from-[66.084%] from-white h-[2204px] left-1/2 rounded-bl-[200px] rounded-br-[200px] to-[#f5faf6] top-0 w-full" />
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-1/2 not-italic text-[#0c2d13] text-[36px] text-center top-[144px] whitespace-nowrap tracking-[0.02em]">당신의 마음에 맞는 상담을 만나보세요</p>
+      <div className="absolute left-1/2 -translate-x-1/2 top-[288px] w-full max-w-[1280px]">
+  <div className="grid grid-cols-[487px_487px] gap-x-[50px] gap-y-[48px] justify-center">
+    <Frame7 />
+    <Frame8 />
+    <Frame11 />
+    <Frame16 />
+  </div>
+</div>
+
+    <div className="absolute left-1/2 -translate-x-1/2 top-[1524px] w-full max-w-[1280px]">
+    <TherapistSlider />
     </div>
+
+      
+      <div className="absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-[1280px]">
+        <Frame54 />
+        <Frame73 />
+        <div className="absolute right-[99px] top-[2394px]">
+          <AppointmentForm />
+        </div>
+      </div>
+    <Frame40 />
+    </div>
+    
   );
 }
 
 function Frame3() {
   return (
-    <div className="symptom-image absolute h-[403px] left-[320px] pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
+    <div className="symptom-image absolute h-[403px] left-0 pointer-events-none rounded-[202px] top-[1560px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
         <div className="absolute inset-0 overflow-hidden rounded-[202px]">
@@ -1074,7 +1019,7 @@ function Frame3() {
 
 function Frame4() {
   return (
-    <div className="symptom-image absolute bg-white h-[403px] left-[653.33px] overflow-clip rounded-[202px] top-[1607px] w-[280px]">
+    <div className="symptom-image absolute bg-white h-[403px] left-[333.33px] overflow-clip rounded-[202px] top-[1607px] w-[280px]">
       <div className="absolute h-[403px] left-[-163.33px] top-[-1px] w-[605px]" data-name="d0195a74-21ab-4e0a-8b1c-d92b7f8c857e 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgD0195A7421Ab4E0A8B1CD92B7F8C857E1} />
       </div>
@@ -1084,7 +1029,7 @@ function Frame4() {
 
 function Frame5() {
   return (
-    <div className="symptom-image absolute bg-white h-[403px] left-[986.67px] overflow-clip rounded-[202px] top-[1560px] w-[280px]">
+    <div className="symptom-image absolute bg-white h-[403px] left-[666.67px] overflow-clip rounded-[202px] top-[1560px] w-[280px]">
       <div className="absolute h-[403px] left-[-163.67px] top-[-1px] w-[605px]" data-name="52e54cbf-3ca3-4936-91d4-f48eecb9daf3 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img52E54Cbf3Ca3493691D4F48Eecb9Daf31} />
       </div>
@@ -1094,7 +1039,7 @@ function Frame5() {
 
 function Frame6() {
   return (
-    <div className="symptom-image absolute h-[403px] left-[1320px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
+    <div className="symptom-image absolute h-[403px] left-[1000px] pointer-events-none rounded-[202px] top-[1607px] w-[280px]">
       <div aria-hidden className="absolute inset-0 rounded-[202px]">
         <div className="absolute bg-white inset-0 rounded-[202px]" />
         <div className="absolute inset-0 overflow-hidden rounded-[202px]">
@@ -1318,31 +1263,35 @@ gsap.to(".hero-title, .hero-sub", {
   
   return (
     
-    <div ref={sectionRef} className="absolute h-[2966px] left-0 top-0 w-[1920px]">
-      <div className="absolute bg-[#f5faf6] h-[686px] left-0 top-[2280px] w-[1920px]" />
-      <div className="-translate-x-1/2 absolute h-[1081px] left-1/2 top-0 w-[1920px]" data-name="dda87e2a-94a1-4339-bf8c-3228616b0be7 1">
+    <div ref={sectionRef} className="absolute h-[2966px] left-0 top-0 w-full">
+      <div className="absolute bg-[#f5faf6] h-[686px] left-0 top-[2280px] w-full" />
+      <div className="-translate-x-1/2 absolute h-[1081px] left-1/2 top-0 w-full" data-name="dda87e2a-94a1-4339-bf8c-3228616b0be7 1">
         <div aria-hidden className="absolute inset-0 pointer-events-none">
           <img alt="" className="absolute max-w-none object-cover size-full" src={imgDda87E2A94A14339Bf8C3228616B0Be71} />
           <div className="absolute bg-[rgba(32,39,28,0.8)] inset-0" />
         </div>
       </div>
       <p className="hero-sub -translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Regular','Batang',serif] font-normal leading-[normal] left-[calc(50%+0.5px)] text-[20px] text-center text-white top-[749px] whitespace-nowrap">당신의 이야기가 천천히 시작될 수 있는 공간</p>
-      <p className="[word-break:break-word] absolute font-[''Noto_Serif_KR':ExtraBold','Batang',serif] tracking-[-0.02em] leading-[normal] left-[320px] not-italic text-[#0c2d13] text-[36px] top-[1377px] whitespace-nowrap">
+        <div
+      className="absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-[1280px] h-full"
+    >
+      <p className="[word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold','Batang',serif] tracking-[-0.02em] leading-[normal] left-0 not-italic text-[#0c2d13] text-[36px] top-[1377px] whitespace-nowrap">
         요즘, 이런 마음으로
         <br aria-hidden />
         하루를 보내고 있나요?
       </p>
-      <div className="symptom-trigger absolute left-0 top-[1300px] h-[700px] w-full pointer-events-none" />
       <Frame3 />
       <Frame4 />
       <Frame5 />
       <Frame6 />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',serif] font-bold leading-[normal] left-[460px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap tracking-[-0.02em]">무기력</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[800px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap tracking-[-0.02em]">관계의 어려움</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1126.5px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap tracking-[-0.02em]">불안</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1460px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap tracking-[-0.02em]">번아웃</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',serif] font-bold leading-[normal] left-[140px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap tracking-[-0.02em]">무기력</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[480px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap tracking-[-0.02em]">관계의 어려움</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[806.5px] text-[#0c2d13] text-[24px] text-center top-[1983px] whitespace-nowrap tracking-[-0.02em]">불안</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:Bold','Batang',sans-serif] font-bold leading-[normal] left-[1140px] text-[#0c2d13] text-[24px] text-center top-[2027px] whitespace-nowrap tracking-[-0.02em]">번아웃</p>
+    </div>
+      <div className="symptom-trigger absolute left-0 top-[1300px] h-[700px] w-full pointer-events-none" />
       <p className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+0.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[2499px] whitespace-nowrap tracking-[-0.02em]">마음의 어려움에는 저마다 다른 이유가 있습니다.</p>
-      <div className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Medium',sans-serif] font-medium leading-[0] left-[952.5px] text-[#5b6b5e] text-[18px] text-center top-[2593px] whitespace-nowrap">
+      <div className="-translate-x-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Medium',sans-serif] font-medium leading-[0] left-1/2 text-[#5b6b5e] text-[18px] text-center top-[2593px] whitespace-nowrap">
         <p className="leading-[1.6] mb-0 whitespace-pre">
           같은 불안도, 같은 무기력도
           <br aria-hidden />

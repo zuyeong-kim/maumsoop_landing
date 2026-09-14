@@ -46,7 +46,7 @@ const THERAPISTS = [
 ];
 
 const AUTO_INTERVAL = 10_000;
-const SLIDE_W = 1920;
+const SLIDE_W = 1280;
 const ANIM_DURATION = 700; // ms
 const ANIM_EASING = "cubic-bezier(0.4, 0, 0.2, 1)";
 const GREEN = "#0c2d13";
@@ -59,7 +59,7 @@ function TherapistProfile({ therapist }: { therapist: (typeof THERAPISTS)[number
       <div
         style={{
           position: "absolute",
-          left: "1207px",
+          right: 0,
           top: 0,
           width: "393px",
           height: "552px",
@@ -76,7 +76,7 @@ function TherapistProfile({ therapist }: { therapist: (typeof THERAPISTS)[number
       <div
         style={{
           position: "absolute",
-          left: "320px",
+          left: 0,
           top: "229px",
           width: "390px",
           display: "flex",
@@ -329,21 +329,27 @@ export default function TherapistSlider() {
   return (
     <div
       style={{
-        position: "absolute",
-        top: "4470px",
-        left: 0,
-        width: `${SLIDE_W}px`,
+        position: "relative",
+        width: "100%",
         height: "700px",
-        background: "linear-gradient(to bottom, #ffffff 0%, #f5faf6 100%)",
         zIndex: 10,
         borderRadius: "0px 0px 200px 200px",
+      }}
+    >
+      <div
+      style={{
+        position: "relative",
+        width: "100%",
+        maxWidth: "1280px",
+        height: "100%",
+        margin: "0 auto",
       }}
     >
       {/* Section heading – static */}
       <p
         style={{
           position: "absolute",
-          left: "320px",
+          left: 0,
           top: "20px",
           fontFamily: "'Noto Serif KR:ExtraBold', sans-serif",
           fontWeight: 800,
@@ -361,7 +367,7 @@ export default function TherapistSlider() {
       <p
         style={{
           position: "absolute",
-          left: "320px",
+          left: 0,
           top: "83px",
           fontFamily: "'Noto Serif KR', sans-serif",
           fontWeight: 400,
@@ -445,6 +451,7 @@ export default function TherapistSlider() {
           <ArrowButton direction="prev" disabled={isPrevDisabled} onClick={handlePrev} />
           <ArrowButton direction="next" disabled={isNextDisabled} onClick={handleNext} />
         </div>
+      </div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default function HeroVideoBackground() {
         top: 0,
         left: "50%",
         transform: "translateX(-50%)",
-        width: "1920px",
+        width: "100%",
         height: "1081px",
         overflow: "hidden",
       }}

@@ -1293,7 +1293,7 @@ function Frame75() {
       <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%+1.5px)] not-italic text-[#0c2d13] text-[36px] text-center top-[144px] whitespace-nowrap">
         당신의 마음에 맞는 상담을 만나보세요
       </p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-[calc(50%-640px)] not-italic text-[#0c2d13] text-[36px] top-[1524px] whitespace-nowrap">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:ExtraBold',sans-serif] leading-[normal] left-0 not-italic text-[#0c2d13] text-[36px] top-[1524px] whitespace-nowrap">
         당신의 이야기를 듣는 사람들
       </p>
       <Frame54 />
@@ -1301,7 +1301,7 @@ function Frame75() {
       <Frame11 />
       <Frame8 />
       <Frame16 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Regular',sans-serif] font-normal leading-[1.6] left-[320px] text-[#5b6b5e] text-[18px] top-[1587px] tracking-[-0.36px] whitespace-nowrap">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Noto_Serif_KR:Regular',sans-serif] font-normal leading-[1.6] left-0 text-[#5b6b5e] text-[18px] top-[1587px] tracking-[-0.36px] whitespace-nowrap">
         전문적인 경험과 따뜻한 시선으로
         <br aria-hidden />
         당신의 마음 곁에 함께합니다.

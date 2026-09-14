@@ -1,16 +1,13 @@
-/* Interactive map replacing the gray placeholder (Frame34) in the 오시는길 section.
-   Frame34 position within page: top = 2966 (Frame75) + 3232 (Frame40) + 127 = 6325px,
-   left = 800px, width = 800px, height = 540px, border-radius = 35px.
-   Address shown in the design is a placeholder (서울 ○○구 ○○로 00, 3층). */
 export default function MapOverlay() {
-const mapSrc =
-  "https://maps.google.com/maps?q=서울+구로구+새말로+97+6층&t=m&z=16&ie=UTF8&iwloc=near&output=embed";
+  const mapSrc =
+    "https://maps.google.com/maps?q=서울+구로구+새말로+97+6층&t=m&z=16&ie=UTF8&iwloc=near&output=embed";
+
   return (
     <div
       style={{
         position: "absolute",
-        top: "6325px",
-        left: "800px",
+        top: "127px",
+        left: "480px",
         width: "800px",
         height: "540px",
         borderRadius: "35px",
